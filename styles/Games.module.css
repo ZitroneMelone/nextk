@@ -1,0 +1,30 @@
+.field{
+    margin-top: 30px;
+}
+
+.row{
+    display: flex;
+}
+
+.rowWin{
+    display: flex;
+    pointer-events:none;
+
+}
+
+.colum{
+    border-style: solid;
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    text-decoration-color: #0d2f2b;
+    font-size: 80px;
+    text-align: center;
+    line-height: 57px;
+}
+
+.colum:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+

@@ -1,15 +1,18 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const util = require('./databaseUtil')
-const insert = require('./databaseInsert')
+const login = require('./databaseLogin')
 
 export default function handler(req, res) {
     function handleGet() {
-        util.readData(res.end)
+        res.end("keine GET Methode für Login")
     }
 
     function handlePost() {
-        insert.writeData(req, res)
+        console.log("yeaahhhh")
+        login.login(req,res)
     }
+
+    console.log(req.body)
+    res.end({message:"keine GET Methode für Login"})
 
     switch (req.method) {
         case "GET":
